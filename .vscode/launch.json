@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Angular",
+            "type": "chrome",
+            "request": "launch",
+            "preLaunchTask": "start angular",
+            "postDebugTask": "stop all tasks",
+            "url": "http://localhost:4200/",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+          // takes a while to start, but DOES start and allow debugging as expected.
+          // Placing a breakpoint on the first line of app.component.ts (where the title is set)
+          // and then switching to/from that tab seems to make the debugging kick in.
+            "name": "Launch Angular in container",
+            "type": "chrome",
+            "request": "launch",
+            "preLaunchTask": "start angular in container",
+            "postDebugTask": "stop all tasks",
+            "url": "http://localhost:4200/",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true
+        }
+    ]
+}

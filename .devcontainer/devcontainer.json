@@ -1,0 +1,56 @@
+{
+    "name": "Angular App in DevContainer",
+    "dockerFile": "Dockerfile",
+
+    // Use 'appPort' to create a container with published ports. If the port isn't working, be sure
+    // your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
+    "appPort": [4200],
+
+    "forwardPorts": [9222],
+
+    // When running within a container, change angular.json as follows:
+    //         "serve": {
+    //    "builder": "@angular-devkit/build-angular:dev-server",
+    //    "options": {
+    //      "browserTarget": "angular-inventory-app:build",
+    //      "host": "0.0.0.0",
+    //      "disableHostCheck": true
+    //    },
+
+    // Comment out the next line to run as root instead.
+    "remoteUser": "node",
+
+    // Use 'settings' to set *default* container specific settings.json values on container create.
+    // You can edit these settings after create using File > Preferences > Settings > Remote.
+    "settings": {
+        "editor.fontLigatures": true,
+        "explorer.openEditors.visible": 0,
+        "window.zoomLevel": 0,
+        "terminal.integrated.shell.linux": "/bin/zsh",
+        "workbench.iconTheme": "vscode-icons"
+        //"terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
+    },
+
+    // Specifies a command that should be run after the container has been created.
+    "postCreateCommand": "yarn install",
+
+    // Add the IDs of extensions you want installed when the container is created in the array below.
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "vscode-icons-team.vscode-icons",
+        "EditorConfig.EditorConfig",
+        "Angular.ng-template",
+        "johnpapa.angular2",
+        "mikael.angular-beastcode",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "eg2.vscode-npm-script",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "mhutchie.git-graph",
+        "msjsdiag.debugger-for-chrome",
+        "johnpapa.angular-essentials"
+    ]
+}
