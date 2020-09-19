@@ -17,6 +17,7 @@
           // takes a while to start, but DOES start and allow debugging as expected.
           // Placing a breakpoint on the first line of app.component.ts (where the title is set)
           // and then switching to/from that tab seems to make the debugging kick in.
+          // See this comment for launch "type" when running in a container - https://github.com/microsoft/vscode/issues/102493#issuecomment-695328710
             "name": "Launch Angular in container",
             "type": "pwa-chrome",
             "request": "launch",
