@@ -27,8 +27,7 @@
         "explorer.openEditors.visible": 0,
         "window.zoomLevel": 0,
         "terminal.integrated.shell.linux": "/bin/zsh",
-        "workbench.iconTheme": "vscode-icons"
-        //"terminal.integrated.fontFamily": "FuraCode Nerd Font Mono",
+        "workbench.iconTheme": "material-icon-theme"
     },
 
     // Specifies a command that should be run after the container has been created.
@@ -37,7 +36,6 @@
     // Add the IDs of extensions you want installed when the container is created in the array below.
     "extensions": [
         "dbaeumer.vscode-eslint",
-        "vscode-icons-team.vscode-icons",
         "EditorConfig.EditorConfig",
         "Angular.ng-template",
         "johnpapa.angular2",
@@ -51,6 +49,12 @@
         "donjayamanne.githistory",
         "mhutchie.git-graph",
         "msjsdiag.debugger-for-chrome",
-        "johnpapa.angular-essentials"
+        "johnpapa.angular-essentials",
+        "pkief.material-icon-theme",
+        "GregorBiswanger.json2ts",
+        "editorconfig.editorconfig",
+        "alefragnani.bookmarks",
+        "visualstudioexptteam.vscodeintellicode",
+        "coenraads.bracket-pair-colorizer-2"
     ]
 }
