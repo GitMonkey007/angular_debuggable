@@ -27,7 +27,15 @@
         "explorer.openEditors.visible": 0,
         "window.zoomLevel": 0,
         "terminal.integrated.shell.linux": "/bin/zsh",
-        "workbench.iconTheme": "material-icon-theme"
+        "workbench.iconTheme": "material-icon-theme",
+        "[plaintext]": {
+            "editor.wordBasedSuggestions": false,
+            "editor.quickSuggestions": {
+                "other": false,
+                "comments": false,
+                "strings": false
+            }
+        }
     },
 
     // Specifies a command that should be run after the container has been created.
@@ -55,6 +63,7 @@
         "editorconfig.editorconfig",
         "alefragnani.bookmarks",
         "visualstudioexptteam.vscodeintellicode",
-        "coenraads.bracket-pair-colorizer-2"
+        "coenraads.bracket-pair-colorizer-2",
+        "raagh.angular-karma-test-explorer"
     ]
 }
